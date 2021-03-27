@@ -1,0 +1,66 @@
+{% extends "layout.html" %} <!-- Inheriting the html structure from layout.html -->
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }} <!-- related to the secret token thing -->
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Add a New Student </legend>
+                <div class="form-group">
+                    {{  form.name.label(class="form-control-label") }}
+                    {{  form.name(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.sin.label(class="form-control-label") }}
+                    {{  form.sin(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.dob.label(class="form-control-label") }}
+                    {{  form.dob(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.sex.label(class="form-control-label") }}
+                    {{  form.sex(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.lang.label(class="form-control-label") }}
+                    {{  form.lang(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.education.label(class="form-control-label") }}
+                    {{  form.education(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.schoolname.label(class="form-control-label") }}
+                    {{  form.schoolname(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.schoolST.label(class="form-control-label") }}
+                    {{  form.schoolST(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.schoolET.label(class="form-control-label") }}
+                    {{  form.schoolET(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.flagLD.label(class="form-control-label") }}
+                    {{  form.flagLD(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.flagADHD.label(class="form-control-label") }}
+                    {{  form.flagADHD(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.flagASD.label(class="form-control-label") }}
+                    {{  form.flagASD(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{  form.flagGifted.label(class="form-control-label") }}
+                    {{  form.flagGifted(class="form-control form-control-lg") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content%}
